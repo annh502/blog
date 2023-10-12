@@ -1,5 +1,6 @@
 from flask import request
 
+from database.database import db
 from src.models.BlacklistToken import BlacklistToken
 from src.models.Comment import Comment
 from src.models.User import User

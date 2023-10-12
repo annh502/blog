@@ -7,6 +7,8 @@ from src.models.Post import Post
 from src.repository import comment_repo
 from src.services import post_service, comment_service
 from src.share.api.ResponseEntityFactory import *
+from flask import current_app
+import traceback
 
 post_route = Blueprint("Posts", __name__)
 
@@ -14,13 +16,55 @@ post_route = Blueprint("Posts", __name__)
 @post_route.route("/", methods=["GET"])
 def get_posts():
     try:
-        posts = post_service.get_all()
+        page = request.args.get("page", -1)
+        per_page = request.args.get("perPage", 4)
+        posts = post_service.get_all(int(page), int(per_page))
         if posts.is_success():
             posts_data = map(Post.map_to_object, posts.data)
             return ok(list(posts_data))
         else:
             return bad_request("Posts not found")
     except Exception as e:
+        return internal_server_error(f"System Error: {str(e)}")
+
+
+@post_route.route("/sort", methods=["GET"])
+def sort_posts():
+    try:
+        sort_by_list = request.args.get("sort_by").split("%")
+        page = int(request.args.get("page", -1))
+        per_page = int(request.args.get("perPage", 4))
+        posts = post_service.sort_posts(sort_by_list, page, per_page)
+        if posts.is_success():
+            posts_data = map(Post.map_to_object, posts.data)
+            return ok(list(posts_data))
+        else:
+            return bad_request("Posts not found: ", posts.data)
+
+    except Exception as e:
+        traceback.print_exc()
+        current_app.logger.exception("Sort Posts error: {}".format(str(e)))
+        return internal_server_error(f"System Error: {str(e)}")
+
+
+@post_route.route("/search-all", methods=['GET'])
+def search_all():
+    try:
+        data = {}
+        keyword = request.args.get("q")
+        posts = post_service.search_post(keyword)
+        if posts.is_success():
+            posts_data = map(Post.map_to_object, posts.data)
+            data['posts'] = list(posts_data)
+        comments = comment_service.search_comment(keyword)
+        if comments.is_success():
+            comments_data = map(Comment.map_to_object, comments.data)
+            data['comments'] = list(comments_data)
+        return ok(data)
+
+    except Exception as e:
+        traceback.print_exc()
+        current_app.logger.exception("Search error: {}".format(str(e)))
         return internal_server_error(f"System Error: {str(e)}")
 
 
@@ -107,7 +151,6 @@ def get_comments(post_id):
         return internal_server_error(f"System Error: {str(e)}")
 
 
-
 @post_route.route("/<int:post_id>/likes", methods=['GET'])
 def get_likes(post_id):
     try:
@@ -130,9 +173,3 @@ def like_post(current_user, post_id):
             else bad_request(likes_result.data)
     except Exception as e:
         return internal_server_error(f"System Error: {str(e)}")
-
-
-@post_route.route("/comments-info")
-def get_comments_info():
-    return make_response(comment_repo.get_all_infor().data), 200
-    # return ok(comment_repo.get_all_infor().data)

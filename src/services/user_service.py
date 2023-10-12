@@ -7,6 +7,7 @@ from src.models.User import User
 from src.share.Result import Result
 from src.repository import user_repo
 from werkzeug.security import generate_password_hash, check_password_hash
+from flask import current_app
 
 
 def encrypt_password(password):
@@ -43,17 +44,22 @@ def login(email, password):
     """Login a user"""
     try:
         if not validate_email(email):
+            current_app.logger.error("Invalid email: {}".format(email))
             return Result.failed(email)
         user_result = user_repo.get_by_email(email)
         user = user_result.data
         if not user_result.is_success():
+            current_app.logger.error("Email do not exist: {}".format(email))
             return Result.failed(email)
         elif not check_password_hash(user.password, password):
+            current_app.logger.error("Wrong password: {}".format(password))
             return Result.failed(password)
         auth_token = user.encode_auth_token(user.id)
+        current_app.logger.info("Login Success!")
         return Result.success(auth_token)
     except Exception as e:
         traceback.print_exc()
+        current_app.logger.exception("Login Failed!")
         return Result.failed(str(e))
 
 
@@ -61,15 +67,21 @@ def create_user(name, email, password):
     try:
         user = user_repo.get_by_email(email)
         if user.is_success():
+            current_app.logger.error("Email exists: {}".format(str(email)))
             return Result.failed("Email exists: " + str(email))
         if name is None:
+            current_app.logger.error("Null Username")
             return Result.failed("Username must not be null.")
         new_user = User(email, name, generate_password_hash(password,  method='pbkdf2:sha256', salt_length=10))
-        return Result.success(new_user.encode_auth_token(new_user.id)) \
-            if user_repo.save(new_user).is_success() \
-            else Result.failed("Cannot save: ")
+        if user_repo.save(new_user).is_success():
+            current_app.logger.info("Register Success!")
+            return Result.success(new_user.encode_auth_token(new_user.id))
+        else:
+            current_app.logger.error("Register Failed!")
+            Result.failed("Cannot save: ")
     except Exception as e:
         traceback.print_exc()
+        current_app.logger.exception("Error while registering: {}".format(str(e)))
         return Result.failed("Error in user services: " + str(e))
 
 
@@ -78,6 +90,7 @@ def log_out(token):
         return user_repo.logout(token)
     except Exception as e:
         traceback.print_exc()
+        current_app.logger.exception("Error while logging out: {}".format(str(e)))
         return Result.failed("Error in user services: " + str(e))
 
 
@@ -89,6 +102,7 @@ def update_user(user_id, data):
         return user_repo.update(user_result.data, data)
     except Exception as e:
         traceback.print_exc()
+        current_app.logger.exception("Error while updating: {}".format(str(e)))
         return Result.failed("Error in user services: " + str(e))
 
 
@@ -100,6 +114,7 @@ def delete_user(user_id):
         return user_repo.delete(user_result.data)
     except Exception as e:
         traceback.print_exc()
+        current_app.logger.exception("Error while deleting: {}".format(str(e)))
         return Result.failed("Error in user services: " + str(e))
 
 
@@ -120,6 +135,7 @@ def disable_account(user_id, account_id):
         return user_repo.delete(account.data)
     except Exception as e:
         traceback.print_exc()
+        current_app.logger.exception("Error while disabling account: {}".format(str(e)))
         return Result.failed("Error in user services: " + str(e))
 
 

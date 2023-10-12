@@ -1,3 +1,5 @@
+
+
 class Result:
     def __init__(self, data, success):
         self.data = data

@@ -1,0 +1,583 @@
+[October 12, 2023 - 11:46:42] | INFO in _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+[October 12, 2023 - 11:46:42] | INFO in _internal >>> [33mPress CTRL+C to quit[0m
+[October 12, 2023 - 11:46:42] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 11:46:43] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 11:46:43] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 11:46:54] | INFO in user_repo >>> Get user with id: banC@rabiloo.com
+[October 12, 2023 - 11:46:55] | INFO in user_service >>> Login Success!
+[October 12, 2023 - 11:46:55] | INFO in app >>> path: /user/signin | method: POST | status: 200 OK | size: 221 >>> b'{\n  "code": "SUCCESS",\n  "data": {\n    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2OTcwODYwNzUsImlhdCI6MTY5NzA4NjAxNSwic3ViIjo1MH0.6QUOjV3VtBALsrYy1xqGd7B6eedfxg4X3QaZX24LAj4"\n  },\n  "message": "Success"\n}\n'
+[October 12, 2023 - 11:46:55] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 11:46:55] "POST /user/signin HTTP/1.1" 200 -
+[October 12, 2023 - 11:47:34] | INFO in user_repo >>> User doesn't exist: ban@rabiloo.com
+[October 12, 2023 - 11:47:34] | ERROR in user_service >>> Email do not exist: ban@rabiloo.com
+[October 12, 2023 - 11:47:34] | INFO in app >>> path: /user/signin | method: POST | status: 400 BAD REQUEST | size: 97 >>> b'{\n  "code": "BAD REQUEST",\n  "data": "ban@rabiloo.com",\n  "message": "sign in account failed!"\n}\n'
+[October 12, 2023 - 11:47:34] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 11:47:34] "[31m[1mPOST /user/signin HTTP/1.1[0m" 400 -
+[October 12, 2023 - 11:56:09] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 11:56:09] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 11:56:10] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 11:56:10] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 11:56:12] | INFO in app >>> path: / | method: GET | status: 500 INTERNAL SERVER ERROR | size: 141 >>> b'{\n  "code": "INTERNAL SERVER ERROR",\n  "data": null,\n  "message": "System Error: get_all() missing 1 required positional argument: \'page\'"\n}\n'
+[October 12, 2023 - 11:56:12] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 11:56:12] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[October 12, 2023 - 11:56:22] | INFO in app >>> path: / | method: GET | status: 500 INTERNAL SERVER ERROR | size: 141 >>> b'{\n  "code": "INTERNAL SERVER ERROR",\n  "data": null,\n  "message": "System Error: get_all() missing 1 required positional argument: \'page\'"\n}\n'
+[October 12, 2023 - 11:56:22] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 11:56:22] "[35m[1mGET /?page=1 HTTP/1.1[0m" 500 -
+[October 12, 2023 - 11:57:02] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\controllers\\post_controller.py', reloading
+[October 12, 2023 - 11:57:02] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 11:57:03] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 11:57:03] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 11:57:06] | INFO in app >>> path: / | method: GET | status: 500 INTERNAL SERVER ERROR | size: 141 >>> b'{\n  "code": "INTERNAL SERVER ERROR",\n  "data": null,\n  "message": "System Error: get_all() missing 1 required positional argument: \'page\'"\n}\n'
+[October 12, 2023 - 11:57:06] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 11:57:06] "[35m[1mGET /?page=1 HTTP/1.1[0m" 500 -
+[October 12, 2023 - 11:57:47] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\controllers\\post_controller.py', reloading
+[October 12, 2023 - 11:57:47] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 11:57:48] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 11:57:48] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 11:57:49] | INFO in app >>> path: / | method: GET | status: 500 INTERNAL SERVER ERROR | size: 141 >>> b'{\n  "code": "INTERNAL SERVER ERROR",\n  "data": null,\n  "message": "System Error: get_all() missing 1 required positional argument: \'page\'"\n}\n'
+[October 12, 2023 - 11:57:49] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 11:57:49] "[35m[1mGET /?page=1 HTTP/1.1[0m" 500 -
+[October 12, 2023 - 11:58:32] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\controllers\\post_controller.py', reloading
+[October 12, 2023 - 11:58:32] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 11:58:33] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 11:58:33] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 11:58:34] | INFO in app >>> path: / | method: GET | status: 500 INTERNAL SERVER ERROR | size: 141 >>> b'{\n  "code": "INTERNAL SERVER ERROR",\n  "data": null,\n  "message": "System Error: get_all() missing 1 required positional argument: \'page\'"\n}\n'
+[October 12, 2023 - 11:58:34] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 11:58:34] "[35m[1mGET /?page=1 HTTP/1.1[0m" 500 -
+[October 12, 2023 - 11:58:44] | INFO in app >>> path: / | method: GET | status: 500 INTERNAL SERVER ERROR | size: 141 >>> b'{\n  "code": "INTERNAL SERVER ERROR",\n  "data": null,\n  "message": "System Error: get_all() missing 1 required positional argument: \'page\'"\n}\n'
+[October 12, 2023 - 11:58:44] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 11:58:44] "[35m[1mGET /?page=1 HTTP/1.1[0m" 500 -
+[October 12, 2023 - 11:59:10] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 11:59:10] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 11:59:11] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 11:59:11] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 11:59:11] | INFO in app >>> path: / | method: GET | status: 200 OK | size: 773 >>> b'{\n  "code": "SUCCESS",\n  "data": [\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 14:48:26",\n      "id": 6,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:18",\n      "id": 7,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:30",\n      "id": 9,\n      "short_description": "short_description",\n      "title": "post 3"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:06",\n      "id": 10,\n      "short_description": "short_description",\n      "title": "post 4"\n    }\n  ],\n  "message": "Success"\n}\n'
+[October 12, 2023 - 11:59:11] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 11:59:11] "GET /?page=1 HTTP/1.1" 200 -
+[October 12, 2023 - 11:59:17] | INFO in app >>> path: / | method: GET | status: 200 OK | size: 776 >>> b'{\n  "code": "SUCCESS",\n  "data": [\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:12",\n      "id": 11,\n      "short_description": "short_description",\n      "title": "post 5"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:29",\n      "id": 12,\n      "short_description": "short_description",\n      "title": "post 6"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:38",\n      "id": 13,\n      "short_description": "short_description",\n      "title": "post 7"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:29:26",\n      "id": 14,\n      "short_description": "short_description",\n      "title": "post 8"\n    }\n  ],\n  "message": "Success"\n}\n'
+[October 12, 2023 - 11:59:17] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 11:59:17] "GET /?page=2 HTTP/1.1" 200 -
+[October 12, 2023 - 11:59:24] | INFO in app >>> path: / | method: GET | status: 400 BAD REQUEST | size: 76 >>> b'{\n  "code": "BAD REQUEST",\n  "data": null,\n  "message": "Posts not found"\n}\n'
+[October 12, 2023 - 11:59:24] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 11:59:24] "[31m[1mGET /?page=4 HTTP/1.1[0m" 400 -
+[October 12, 2023 - 11:59:28] | INFO in app >>> path: / | method: GET | status: 200 OK | size: 250 >>> b'{\n  "code": "SUCCESS",\n  "data": [\n    {\n      "body": "lorem ipsum more....",\n      "created_at": "10/05/2023, 15:22:25",\n      "id": 8,\n      "short_description": "short_description",\n      "title": "other post"\n    }\n  ],\n  "message": "Success"\n}\n'
+[October 12, 2023 - 11:59:28] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 11:59:28] "GET /?page=3 HTTP/1.1" 200 -
+[October 12, 2023 - 12:01:22] | INFO in app >>> path: / | method: GET | status: 400 BAD REQUEST | size: 76 >>> b'{\n  "code": "BAD REQUEST",\n  "data": null,\n  "message": "Posts not found"\n}\n'
+[October 12, 2023 - 12:01:22] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 12:01:22] "[31m[1mGET /?page=0 HTTP/1.1[0m" 400 -
+[October 12, 2023 - 12:01:39] | INFO in app >>> path: / | method: GET | status: 400 BAD REQUEST | size: 76 >>> b'{\n  "code": "BAD REQUEST",\n  "data": null,\n  "message": "Posts not found"\n}\n'
+[October 12, 2023 - 12:01:39] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 12:01:39] "[31m[1mGET /?page=-1 HTTP/1.1[0m" 400 -
+[October 12, 2023 - 13:17:09] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\controllers\\post_controller.py', reloading
+[October 12, 2023 - 13:17:09] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 13:17:11] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 13:17:11] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 13:17:20] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\controllers\\post_controller.py', reloading
+[October 12, 2023 - 13:17:20] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 13:17:22] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 13:17:22] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 13:17:24] | INFO in app >>> path: / | method: GET | status: 400 BAD REQUEST | size: 76 >>> b'{\n  "code": "BAD REQUEST",\n  "data": null,\n  "message": "Posts not found"\n}\n'
+[October 12, 2023 - 13:17:24] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 13:17:24] "[31m[1mGET / HTTP/1.1[0m" 400 -
+[October 12, 2023 - 13:19:01] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 13:19:01] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 13:19:02] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 13:19:02] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 13:20:08] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 13:20:08] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 13:20:09] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 13:20:09] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 13:20:10] | INFO in app >>> path: / | method: GET | status: 200 OK | size: 1671 >>> b'{\n  "code": "SUCCESS",\n  "data": [\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 14:48:26",\n      "id": 6,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:18",\n      "id": 7,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:30",\n      "id": 9,\n      "short_description": "short_description",\n      "title": "post 3"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:06",\n      "id": 10,\n      "short_description": "short_description",\n      "title": "post 4"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:12",\n      "id": 11,\n      "short_description": "short_description",\n      "title": "post 5"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:29",\n      "id": 12,\n      "short_description": "short_description",\n      "title": "post 6"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:38",\n      "id": 13,\n      "short_description": "short_description",\n      "title": "post 7"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:29:26",\n      "id": 14,\n      "short_description": "short_description",\n      "title": "post 8"\n    },\n    {\n      "body": "lorem ipsum more....",\n      "created_at": "10/05/2023, 15:22:25",\n      "id": 8,\n      "short_description": "short_description",\n      "title": "other post"\n    }\n  ],\n  "message": "Success"\n}\n'
+[October 12, 2023 - 13:20:10] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 13:20:10] "GET / HTTP/1.1" 200 -
+[October 12, 2023 - 13:20:29] | INFO in app >>> path: / | method: GET | status: 200 OK | size: 598 >>> b'{\n  "code": "SUCCESS",\n  "data": [\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:06",\n      "id": 10,\n      "short_description": "short_description",\n      "title": "post 4"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:12",\n      "id": 11,\n      "short_description": "short_description",\n      "title": "post 5"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:29",\n      "id": 12,\n      "short_description": "short_description",\n      "title": "post 6"\n    }\n  ],\n  "message": "Success"\n}\n'
+[October 12, 2023 - 13:20:29] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 13:20:29] "GET /?page=2&perPage=3 HTTP/1.1" 200 -
+[October 12, 2023 - 13:22:26] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\controllers\\user_controller.py', reloading
+[October 12, 2023 - 13:22:26] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 13:22:27] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 13:22:27] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 13:22:32] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 13:22:32] "[35m[1mGET /user/ HTTP/1.1[0m" 500 -
+[October 12, 2023 - 13:25:53] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\like_repo.py', reloading
+[October 12, 2023 - 13:25:53] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 13:25:54] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 13:25:54] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 13:28:46] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\controllers\\post_controller.py', reloading
+[October 12, 2023 - 13:28:46] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 13:28:47] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 13:28:47] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 13:30:38] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\controllers\\post_controller.py', reloading
+[October 12, 2023 - 13:30:38] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 13:30:39] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 13:30:39] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 13:31:35] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 13:31:35] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 13:31:43] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 13:32:39] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 13:33:32] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 13:35:31] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 13:35:32] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 13:35:32] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 13:36:02] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 13:36:02] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 13:36:03] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 13:36:03] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 13:36:12] | INFO in app >>> path: / | method: GET | status: 200 OK | size: 1671 >>> b'{\n  "code": "SUCCESS",\n  "data": [\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 14:48:26",\n      "id": 6,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:18",\n      "id": 7,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:30",\n      "id": 9,\n      "short_description": "short_description",\n      "title": "post 3"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:06",\n      "id": 10,\n      "short_description": "short_description",\n      "title": "post 4"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:12",\n      "id": 11,\n      "short_description": "short_description",\n      "title": "post 5"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:29",\n      "id": 12,\n      "short_description": "short_description",\n      "title": "post 6"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:38",\n      "id": 13,\n      "short_description": "short_description",\n      "title": "post 7"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:29:26",\n      "id": 14,\n      "short_description": "short_description",\n      "title": "post 8"\n    },\n    {\n      "body": "lorem ipsum more....",\n      "created_at": "10/05/2023, 15:22:25",\n      "id": 8,\n      "short_description": "short_description",\n      "title": "other post"\n    }\n  ],\n  "message": "Success"\n}\n'
+[October 12, 2023 - 13:36:12] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 13:36:12] "GET /?page=1&perPage=10 HTTP/1.1" 200 -
+[October 12, 2023 - 13:36:21] | INFO in app >>> path: / | method: GET | status: 200 OK | size: 1671 >>> b'{\n  "code": "SUCCESS",\n  "data": [\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 14:48:26",\n      "id": 6,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:18",\n      "id": 7,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:30",\n      "id": 9,\n      "short_description": "short_description",\n      "title": "post 3"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:06",\n      "id": 10,\n      "short_description": "short_description",\n      "title": "post 4"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:12",\n      "id": 11,\n      "short_description": "short_description",\n      "title": "post 5"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:29",\n      "id": 12,\n      "short_description": "short_description",\n      "title": "post 6"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:38",\n      "id": 13,\n      "short_description": "short_description",\n      "title": "post 7"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:29:26",\n      "id": 14,\n      "short_description": "short_description",\n      "title": "post 8"\n    },\n    {\n      "body": "lorem ipsum more....",\n      "created_at": "10/05/2023, 15:22:25",\n      "id": 8,\n      "short_description": "short_description",\n      "title": "other post"\n    }\n  ],\n  "message": "Success"\n}\n'
+[October 12, 2023 - 13:36:21] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 13:36:21] "GET /?page=1&perPage=20 HTTP/1.1" 200 -
+[October 12, 2023 - 13:37:13] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 13:37:13] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 13:39:59] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 13:43:02] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 13:44:13] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 13:44:18] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 13:44:37] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 13:44:59] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 13:45:44] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 13:47:27] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 13:54:53] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 13:54:54] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 13:54:54] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 13:55:08] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 13:55:08] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 13:55:09] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 13:55:09] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 14:01:58] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 14:01:59] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 14:02:00] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 14:02:00] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 14:04:57] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 14:04:57] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 14:07:01] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 14:07:02] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 14:07:02] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 14:13:05] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 14:13:05] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 14:13:06] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 14:13:06] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 14:13:15] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 14:13:15] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 14:13:16] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 14:13:16] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 14:16:42] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 14:16:42] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 14:16:43] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 14:16:43] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 14:18:36] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 14:18:36] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 14:18:37] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 14:18:37] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 14:22:21] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 14:22:21] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 14:22:22] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 14:22:22] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 14:37:53] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 14:37:53] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 14:37:54] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 14:37:54] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 14:39:36] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\controllers\\post_controller.py', reloading
+[October 12, 2023 - 14:39:36] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 14:39:37] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 14:39:37] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 14:40:59] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 14:40:59] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 14:41:00] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 14:41:00] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 14:41:14] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\controllers\\post_controller.py', reloading
+[October 12, 2023 - 14:41:14] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 14:41:15] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 14:41:15] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 14:41:32] | INFO in app >>> path: /sort | method: GET | status: 400 BAD REQUEST | size: 76 >>> b'{\n  "code": "BAD REQUEST",\n  "data": null,\n  "message": "Posts not found"\n}\n'
+[October 12, 2023 - 14:41:32] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 14:41:32] "[31m[1mGET /sort?sort_by=+like HTTP/1.1[0m" 400 -
+[October 12, 2023 - 14:41:48] | INFO in app >>> path: /sort | method: GET | status: 400 BAD REQUEST | size: 76 >>> b'{\n  "code": "BAD REQUEST",\n  "data": null,\n  "message": "Posts not found"\n}\n'
+[October 12, 2023 - 14:41:48] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 14:41:48] "[31m[1mGET /sort?sort_by=+title HTTP/1.1[0m" 400 -
+[October 12, 2023 - 14:42:37] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 14:42:37] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 14:42:38] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 14:42:38] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 14:42:39] | INFO in app >>> path: /sort | method: GET | status: 400 BAD REQUEST | size: 76 >>> b'{\n  "code": "BAD REQUEST",\n  "data": null,\n  "message": "Posts not found"\n}\n'
+[October 12, 2023 - 14:42:39] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 14:42:39] "[31m[1mGET /sort?sort_by=+title HTTP/1.1[0m" 400 -
+[October 12, 2023 - 14:42:58] | INFO in _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+[October 12, 2023 - 14:42:58] | INFO in _internal >>> [33mPress CTRL+C to quit[0m
+[October 12, 2023 - 14:43:00] | INFO in app >>> path: /sort | method: GET | status: 400 BAD REQUEST | size: 63 >>> b'{"code":"BAD REQUEST","data":null,"message":"Posts not found"}\n'
+[October 12, 2023 - 14:43:00] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 14:43:00] "[31m[1mGET /sort?sort_by=+title HTTP/1.1[0m" 400 -
+[October 12, 2023 - 14:43:10] | INFO in app >>> path: /sort | method: GET | status: 400 BAD REQUEST | size: 63 >>> b'{"code":"BAD REQUEST","data":null,"message":"Posts not found"}\n'
+[October 12, 2023 - 14:43:10] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 14:43:10] "[31m[1mGET /sort?sort_by=+title HTTP/1.1[0m" 400 -
+[October 12, 2023 - 14:43:31] | INFO in _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+[October 12, 2023 - 14:43:31] | INFO in _internal >>> [33mPress CTRL+C to quit[0m
+[October 12, 2023 - 14:43:36] | INFO in app >>> path: /sort | method: GET | status: 400 BAD REQUEST | size: 63 >>> b'{"code":"BAD REQUEST","data":null,"message":"Posts not found"}\n'
+[October 12, 2023 - 14:43:36] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 14:43:36] "[31m[1mGET /sort?sort_by=+title HTTP/1.1[0m" 400 -
+[October 12, 2023 - 14:44:19] | INFO in _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+[October 12, 2023 - 14:44:19] | INFO in _internal >>> [33mPress CTRL+C to quit[0m
+[October 12, 2023 - 14:44:21] | INFO in app >>> path: /sort | method: GET | status: 400 BAD REQUEST | size: 86 >>> b'{"code":"BAD REQUEST","data":"Can not sort by:  title","message":"Posts not found: "}\n'
+[October 12, 2023 - 14:44:21] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 14:44:21] "[31m[1mGET /sort?sort_by=+title HTTP/1.1[0m" 400 -
+[October 12, 2023 - 14:45:26] | INFO in _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+[October 12, 2023 - 14:45:26] | INFO in _internal >>> [33mPress CTRL+C to quit[0m
+[October 12, 2023 - 14:45:26] | INFO in app >>> path: /sort | method: GET | status: 400 BAD REQUEST | size: 86 >>> b'{"code":"BAD REQUEST","data":"Can not sort by:  title","message":"Posts not found: "}\n'
+[October 12, 2023 - 14:45:26] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 14:45:26] "[31m[1mGET /sort?sort_by=+title HTTP/1.1[0m" 400 -
+[October 12, 2023 - 14:45:59] | INFO in _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+[October 12, 2023 - 14:45:59] | INFO in _internal >>> [33mPress CTRL+C to quit[0m
+[October 12, 2023 - 14:47:07] | INFO in _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+[October 12, 2023 - 14:47:07] | INFO in _internal >>> [33mPress CTRL+C to quit[0m
+[October 12, 2023 - 14:47:42] | INFO in _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+[October 12, 2023 - 14:47:42] | INFO in _internal >>> [33mPress CTRL+C to quit[0m
+[October 12, 2023 - 14:49:12] | INFO in _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+[October 12, 2023 - 14:49:12] | INFO in _internal >>> [33mPress CTRL+C to quit[0m
+[October 12, 2023 - 14:50:07] | INFO in _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+[October 12, 2023 - 14:50:07] | INFO in _internal >>> [33mPress CTRL+C to quit[0m
+[October 12, 2023 - 14:50:07] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 14:50:08] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 14:50:08] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 14:50:11] | INFO in app >>> path: /sort | method: GET | status: 400 BAD REQUEST | size: 100 >>> b'{\n  "code": "BAD REQUEST",\n  "data": "Can not sort by: a*title",\n  "message": "Posts not found: "\n}\n'
+[October 12, 2023 - 14:50:11] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 14:50:11] "[31m[1mGET /sort?sort_by=a*title HTTP/1.1[0m" 400 -
+[October 12, 2023 - 14:50:53] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 14:50:53] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 14:50:54] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 14:50:54] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 14:51:20] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 14:51:20] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 14:51:21] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 14:51:21] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 14:51:22] | INFO in app >>> path: /sort | method: GET | status: 400 BAD REQUEST | size: 100 >>> b'{\n  "code": "BAD REQUEST",\n  "data": "Can not sort by: a*title",\n  "message": "Posts not found: "\n}\n'
+[October 12, 2023 - 14:51:22] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 14:51:22] "[31m[1mGET /sort?sort_by=a*title HTTP/1.1[0m" 400 -
+[October 12, 2023 - 14:51:35] | INFO in app >>> path: /sort | method: GET | status: 400 BAD REQUEST | size: 100 >>> b'{\n  "code": "BAD REQUEST",\n  "data": "Can not sort by: a*title",\n  "message": "Posts not found: "\n}\n'
+[October 12, 2023 - 14:51:35] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 14:51:35] "[31m[1mGET /sort?sort_by=a*title HTTP/1.1[0m" 400 -
+[October 12, 2023 - 14:51:46] | INFO in _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+[October 12, 2023 - 14:51:46] | INFO in _internal >>> [33mPress CTRL+C to quit[0m
+[October 12, 2023 - 14:52:11] | INFO in _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+[October 12, 2023 - 14:52:11] | INFO in _internal >>> [33mPress CTRL+C to quit[0m
+[October 12, 2023 - 14:52:43] | INFO in _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+[October 12, 2023 - 14:52:43] | INFO in _internal >>> [33mPress CTRL+C to quit[0m
+[October 12, 2023 - 14:52:43] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 14:52:44] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 14:52:44] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 14:52:48] | INFO in app >>> path: /sort | method: GET | status: 400 BAD REQUEST | size: 272 >>> b'{\n  "code": "BAD REQUEST",\n  "data": "Error: post_repo Can\'t resolve label reference for ORDER BY / GROUP BY / DISTINCT etc. Textual SQL expression \'count(Comment.id) asc\' should be explicitly declared as text(\'count(Comment.id) asc\')",\n  "message": "Posts not found: "\n}\n'
+[October 12, 2023 - 14:52:48] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 14:52:48] "[31m[1mGET /sort?sort_by=a*title HTTP/1.1[0m" 400 -
+[October 12, 2023 - 14:53:23] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 14:53:23] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 14:53:24] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 14:53:24] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 14:53:30] | INFO in app >>> path: /sort | method: GET | status: 400 BAD REQUEST | size: 682 >>> b'{\n  "code": "BAD REQUEST",\n  "data": "Error: post_repo (psycopg2.errors.UndefinedTable) missing FROM-clause entry for table \\"comment\\"\\nLINE 2: ...nts ON posts.id = comments.post_id ORDER BY count(Comment.id...\\n                                                             ^\\n\\n[SQL: SELECT posts.id AS posts_id, posts.title AS posts_title, posts.short_description AS posts_short_description, posts.body AS posts_body, posts.created_at AS posts_created_at, posts.author_id AS posts_author_id \\nFROM posts JOIN comments ON posts.id = comments.post_id ORDER BY count(Comment.id) asc]\\n(Background on this error at: https://sqlalche.me/e/20/f405)",\n  "message": "Posts not found: "\n}\n'
+[October 12, 2023 - 14:53:30] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 14:53:30] "[31m[1mGET /sort?sort_by=a*title HTTP/1.1[0m" 400 -
+[October 12, 2023 - 15:03:09] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 15:03:09] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:03:11] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:03:11] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:03:29] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 15:03:29] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:03:30] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:03:30] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:03:39] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 15:03:39] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:03:40] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:03:40] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:04:19] | INFO in app >>> path: /sort | method: GET | status: 400 BAD REQUEST | size: 682 >>> b'{\n  "code": "BAD REQUEST",\n  "data": "Error: post_repo (psycopg2.errors.UndefinedTable) missing FROM-clause entry for table \\"comment\\"\\nLINE 2: ...nts ON posts.id = comments.post_id ORDER BY count(Comment.id...\\n                                                             ^\\n\\n[SQL: SELECT posts.id AS posts_id, posts.title AS posts_title, posts.short_description AS posts_short_description, posts.body AS posts_body, posts.created_at AS posts_created_at, posts.author_id AS posts_author_id \\nFROM posts JOIN comments ON posts.id = comments.post_id ORDER BY count(Comment.id) asc]\\n(Background on this error at: https://sqlalche.me/e/20/f405)",\n  "message": "Posts not found: "\n}\n'
+[October 12, 2023 - 15:04:19] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:04:19] "[31m[1mGET /sort?sort_by=a*title HTTP/1.1[0m" 400 -
+[October 12, 2023 - 15:05:44] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 15:05:44] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:05:45] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:05:45] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:05:47] | INFO in app >>> path: /sort | method: GET | status: 400 BAD REQUEST | size: 682 >>> b'{\n  "code": "BAD REQUEST",\n  "data": "Error: post_repo (psycopg2.errors.UndefinedTable) missing FROM-clause entry for table \\"comment\\"\\nLINE 2: ...nts ON posts.id = comments.post_id ORDER BY count(Comment.id...\\n                                                             ^\\n\\n[SQL: SELECT posts.id AS posts_id, posts.title AS posts_title, posts.short_description AS posts_short_description, posts.body AS posts_body, posts.created_at AS posts_created_at, posts.author_id AS posts_author_id \\nFROM posts JOIN comments ON posts.id = comments.post_id ORDER BY count(Comment.id) asc]\\n(Background on this error at: https://sqlalche.me/e/20/f405)",\n  "message": "Posts not found: "\n}\n'
+[October 12, 2023 - 15:05:47] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:05:47] "[31m[1mGET /sort?sort_by=a*title HTTP/1.1[0m" 400 -
+[October 12, 2023 - 15:06:18] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 15:06:18] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:06:19] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:06:19] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:06:26] | INFO in app >>> path: /sort | method: GET | status: 400 BAD REQUEST | size: 676 >>> b'{\n  "code": "BAD REQUEST",\n  "data": "Error: post_repo (psycopg2.errors.GroupingError) column \\"posts.id\\" must appear in the GROUP BY clause or be used in an aggregate function\\nLINE 1: SELECT posts.id AS posts_id, posts.title AS posts_title, pos...\\n               ^\\n\\n[SQL: SELECT posts.id AS posts_id, posts.title AS posts_title, posts.short_description AS posts_short_description, posts.body AS posts_body, posts.created_at AS posts_created_at, posts.author_id AS posts_author_id \\nFROM posts JOIN comments ON posts.id = comments.post_id ORDER BY count(Comments.id) asc]\\n(Background on this error at: https://sqlalche.me/e/20/f405)",\n  "message": "Posts not found: "\n}\n'
+[October 12, 2023 - 15:06:26] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:06:26] "[31m[1mGET /sort?sort_by=a*title HTTP/1.1[0m" 400 -
+[October 12, 2023 - 15:07:03] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 15:07:03] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:07:04] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:07:04] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:07:04] | INFO in app >>> path: /sort | method: GET | status: 400 BAD REQUEST | size: 135 >>> b'{\n  "code": "BAD REQUEST",\n  "data": "Error: post_repo \'list\' object has no attribute \'statement\'",\n  "message": "Posts not found: "\n}\n'
+[October 12, 2023 - 15:07:04] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:07:04] "[31m[1mGET /sort?sort_by=a*title HTTP/1.1[0m" 400 -
+[October 12, 2023 - 15:07:19] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 15:07:19] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:07:20] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:07:20] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:07:22] | INFO in app >>> path: /sort | method: GET | status: 200 OK | size: 783 >>> b'{\n  "code": "SUCCESS",\n  "data": [\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:06",\n      "id": 10,\n      "short_description": "short_description",\n      "title": "post 4"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:18",\n      "id": 7,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:29",\n      "id": 12,\n      "short_description": "short_description",\n      "title": "post 6"\n    },\n    {\n      "body": "lorem ipsum more....",\n      "created_at": "10/05/2023, 15:22:25",\n      "id": 8,\n      "short_description": "short_description",\n      "title": "other post"\n    }\n  ],\n  "message": "Success"\n}\n'
+[October 12, 2023 - 15:07:22] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:07:22] "GET /sort?sort_by=a*title HTTP/1.1" 200 -
+[October 12, 2023 - 15:08:03] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 15:08:03] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:08:04] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:08:04] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:08:28] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 15:08:28] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:08:29] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:08:29] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:08:30] | INFO in app >>> path: /sort | method: GET | status: 400 BAD REQUEST | size: 123 >>> b'{\n  "code": "BAD REQUEST",\n  "data": "Error: post_repo \'Query\' object is not callable",\n  "message": "Posts not found: "\n}\n'
+[October 12, 2023 - 15:08:30] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:08:30] "[31m[1mGET /sort?sort_by=a*title HTTP/1.1[0m" 400 -
+[October 12, 2023 - 15:08:50] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 15:08:50] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:08:51] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:08:51] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:08:51] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:08:51] "[35m[1mGET /sort?sort_by=a*title HTTP/1.1[0m" 500 -
+[October 12, 2023 - 15:09:10] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\controllers\\post_controller.py', reloading
+[October 12, 2023 - 15:09:10] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:09:11] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:09:11] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:09:24] | ERROR in post_controller >>> Sort Posts error: id
+Traceback (most recent call last):
+  File "C:\Users\RB019\PycharmProjects\flaskProject\.venv\Lib\site-packages\sqlalchemy\engine\result.py", line 202, in _key_not_found
+    self._key_fallback(key, None)
+  File "C:\Users\RB019\PycharmProjects\flaskProject\.venv\Lib\site-packages\sqlalchemy\engine\result.py", line 141, in _key_fallback
+    raise KeyError(key) from err
+KeyError: 'id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\RB019\PycharmProjects\flaskProject\src\controllers\post_controller.py", line 40, in sort_posts
+    return ok(list(posts_data))
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\RB019\PycharmProjects\flaskProject\src\models\Post.py", line 25, in map_to_object
+    return {"id": self.id,
+                  ^^^^^^^
+  File "lib\\sqlalchemy\\cyextension\\resultproxy.pyx", line 60, in sqlalchemy.cyextension.resultproxy.BaseRow.__getattr__
+  File "lib\\sqlalchemy\\cyextension\\resultproxy.pyx", line 57, in sqlalchemy.cyextension.resultproxy.BaseRow._get_by_key_impl
+  File "C:\Users\RB019\PycharmProjects\flaskProject\.venv\Lib\site-packages\sqlalchemy\engine\result.py", line 204, in _key_not_found
+    raise AttributeError(ke.args[0]) from ke
+AttributeError: id
+[October 12, 2023 - 15:09:24] | INFO in app >>> path: /sort | method: GET | status: 500 INTERNAL SERVER ERROR | size: 87 >>> b'{\n  "code": "INTERNAL SERVER ERROR",\n  "data": null,\n  "message": "System Error: id"\n}\n'
+[October 12, 2023 - 15:09:24] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:09:24] "[35m[1mGET /sort?sort_by=a*title HTTP/1.1[0m" 500 -
+[October 12, 2023 - 15:10:31] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 15:10:31] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:10:32] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:10:32] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:10:37] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 15:10:37] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:10:38] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:10:38] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:10:39] | INFO in app >>> path: /sort | method: GET | status: 200 OK | size: 783 >>> b'{\n  "code": "SUCCESS",\n  "data": [\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:06",\n      "id": 10,\n      "short_description": "short_description",\n      "title": "post 4"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:18",\n      "id": 7,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:29",\n      "id": 12,\n      "short_description": "short_description",\n      "title": "post 6"\n    },\n    {\n      "body": "lorem ipsum more....",\n      "created_at": "10/05/2023, 15:22:25",\n      "id": 8,\n      "short_description": "short_description",\n      "title": "other post"\n    }\n  ],\n  "message": "Success"\n}\n'
+[October 12, 2023 - 15:10:39] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:10:39] "GET /sort?sort_by=a*title HTTP/1.1" 200 -
+[October 12, 2023 - 15:11:59] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 15:11:59] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:12:00] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:12:00] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:12:03] | INFO in app >>> path: /sort | method: GET | status: 200 OK | size: 1671 >>> b'{\n  "code": "SUCCESS",\n  "data": [\n    {\n      "body": "lorem ipsum more....",\n      "created_at": "10/05/2023, 15:22:25",\n      "id": 8,\n      "short_description": "short_description",\n      "title": "other post"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:18",\n      "id": 7,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:29",\n      "id": 12,\n      "short_description": "short_description",\n      "title": "post 6"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:06",\n      "id": 10,\n      "short_description": "short_description",\n      "title": "post 4"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:12",\n      "id": 11,\n      "short_description": "short_description",\n      "title": "post 5"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:30",\n      "id": 9,\n      "short_description": "short_description",\n      "title": "post 3"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:38",\n      "id": 13,\n      "short_description": "short_description",\n      "title": "post 7"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:29:26",\n      "id": 14,\n      "short_description": "short_description",\n      "title": "post 8"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 14:48:26",\n      "id": 6,\n      "short_description": "short_description",\n      "title": "post 1"\n    }\n  ],\n  "message": "Success"\n}\n'
+[October 12, 2023 - 15:12:03] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:12:03] "GET /sort?sort_by=a*title HTTP/1.1" 200 -
+[October 12, 2023 - 15:13:33] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 15:13:33] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:13:34] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:13:34] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:14:34] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 15:14:34] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:14:35] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:14:35] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:15:18] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 15:15:18] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:15:19] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:15:19] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:15:41] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 15:15:41] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:15:42] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:15:42] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:15:50] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 15:15:50] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:15:51] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:15:51] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:16:15] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 15:16:15] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:16:16] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:16:16] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:16:17] | INFO in app >>> path: /sort | method: GET | status: 400 BAD REQUEST | size: 212 >>> b'{\n  "code": "BAD REQUEST",\n  "data": "Error: post_repo ON clause, typically a SQL expression or ORM relationship attribute expected, got <class \'src.models.Comment.Comment\'>.",\n  "message": "Posts not found: "\n}\n'
+[October 12, 2023 - 15:16:17] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:16:17] "[31m[1mGET /sort?sort_by=a*title HTTP/1.1[0m" 400 -
+[October 12, 2023 - 15:16:59] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 15:16:59] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:17:00] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:17:00] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:17:01] | INFO in app >>> path: /sort | method: GET | status: 400 BAD REQUEST | size: 262 >>> b'{\n  "code": "BAD REQUEST",\n  "data": "Error: post_repo Can\'t resolve label reference for ORDER BY / GROUP BY / DISTINCT etc. Textual SQL expression \'Posts.*title asc\' should be explicitly declared as text(\'Posts.*title asc\')",\n  "message": "Posts not found: "\n}\n'
+[October 12, 2023 - 15:17:01] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:17:01] "[31m[1mGET /sort?sort_by=a*title HTTP/1.1[0m" 400 -
+[October 12, 2023 - 15:18:38] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 15:18:38] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:18:39] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:18:39] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:18:40] | INFO in app >>> path: /sort | method: GET | status: 400 BAD REQUEST | size: 737 >>> b'{\n  "code": "BAD REQUEST",\n  "data": "Error: post_repo (psycopg2.errors.SyntaxError) syntax error at or near \\"title\\"\\nLINE 2: ... = likes.post_id GROUP BY posts.id ORDER BY Posts.*title asc\\n                                                              ^\\n\\n[SQL: SELECT posts.id AS posts_id, posts.title AS posts_title, posts.short_description AS posts_short_description, posts.body AS posts_body, posts.created_at AS posts_created_at, posts.author_id AS posts_author_id \\nFROM posts LEFT OUTER JOIN comments ON posts.id = comments.post_id LEFT OUTER JOIN likes ON posts.id = likes.post_id GROUP BY posts.id ORDER BY Posts.*title asc]\\n(Background on this error at: https://sqlalche.me/e/20/f405)",\n  "message": "Posts not found: "\n}\n'
+[October 12, 2023 - 15:18:40] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:18:40] "[31m[1mGET /sort?sort_by=a*title HTTP/1.1[0m" 400 -
+[October 12, 2023 - 15:19:08] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 15:19:08] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:19:29] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:19:29] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:19:29] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:21:39] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 15:21:40] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:21:41] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:21:41] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:21:41] | INFO in app >>> path: /sort | method: GET | status: 200 OK | size: 1671 >>> b'{\n  "code": "SUCCESS",\n  "data": [\n    {\n      "body": "lorem ipsum more....",\n      "created_at": "10/05/2023, 15:22:25",\n      "id": 8,\n      "short_description": "short_description",\n      "title": "other post"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:18",\n      "id": 7,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 14:48:26",\n      "id": 6,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:30",\n      "id": 9,\n      "short_description": "short_description",\n      "title": "post 3"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:06",\n      "id": 10,\n      "short_description": "short_description",\n      "title": "post 4"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:12",\n      "id": 11,\n      "short_description": "short_description",\n      "title": "post 5"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:29",\n      "id": 12,\n      "short_description": "short_description",\n      "title": "post 6"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:38",\n      "id": 13,\n      "short_description": "short_description",\n      "title": "post 7"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:29:26",\n      "id": 14,\n      "short_description": "short_description",\n      "title": "post 8"\n    }\n  ],\n  "message": "Success"\n}\n'
+[October 12, 2023 - 15:21:41] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:21:41] "GET /sort?sort_by=a*title HTTP/1.1" 200 -
+[October 12, 2023 - 15:21:51] | INFO in app >>> path: /sort | method: GET | status: 400 BAD REQUEST | size: 767 >>> b'{\n  "code": "BAD REQUEST",\n  "data": "Error: post_repo (psycopg2.errors.SyntaxError) syntax error at or near \\"asccount\\"\\nLINE 2: ...ost_id GROUP BY posts.id ORDER BY count(Likes.id) asccount(C...\\n                                                             ^\\n\\n[SQL: SELECT posts.id AS posts_id, posts.title AS posts_title, posts.short_description AS posts_short_description, posts.body AS posts_body, posts.created_at AS posts_created_at, posts.author_id AS posts_author_id \\nFROM posts LEFT OUTER JOIN comments ON posts.id = comments.post_id LEFT OUTER JOIN likes ON posts.id = likes.post_id GROUP BY posts.id ORDER BY count(Likes.id) asccount(Comments.id) asc]\\n(Background on this error at: https://sqlalche.me/e/20/f405)",\n  "message": "Posts not found: "\n}\n'
+[October 12, 2023 - 15:21:51] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:21:51] "[31m[1mGET /sort?sort_by=a*like HTTP/1.1[0m" 400 -
+[October 12, 2023 - 15:22:32] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 15:22:32] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:22:33] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:22:33] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:22:40] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 15:22:40] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:22:41] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:22:41] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:22:59] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 15:22:59] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:22:59] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:22:59] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:23:10] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 15:23:10] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:23:11] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:23:11] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:23:11] | INFO in app >>> path: /sort | method: GET | status: 200 OK | size: 1671 >>> b'{\n  "code": "SUCCESS",\n  "data": [\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:06",\n      "id": 10,\n      "short_description": "short_description",\n      "title": "post 4"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 14:48:26",\n      "id": 6,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:29:26",\n      "id": 14,\n      "short_description": "short_description",\n      "title": "post 8"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:38",\n      "id": 13,\n      "short_description": "short_description",\n      "title": "post 7"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:12",\n      "id": 11,\n      "short_description": "short_description",\n      "title": "post 5"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:18",\n      "id": 7,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:30",\n      "id": 9,\n      "short_description": "short_description",\n      "title": "post 3"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:29",\n      "id": 12,\n      "short_description": "short_description",\n      "title": "post 6"\n    },\n    {\n      "body": "lorem ipsum more....",\n      "created_at": "10/05/2023, 15:22:25",\n      "id": 8,\n      "short_description": "short_description",\n      "title": "other post"\n    }\n  ],\n  "message": "Success"\n}\n'
+[October 12, 2023 - 15:23:11] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:23:11] "GET /sort?sort_by=a*like HTTP/1.1" 200 -
+[October 12, 2023 - 15:23:23] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 15:23:23] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:23:24] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:23:24] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:23:28] | INFO in app >>> path: /sort | method: GET | status: 200 OK | size: 1671 >>> b'{\n  "code": "SUCCESS",\n  "data": [\n    {\n      "body": "lorem ipsum more....",\n      "created_at": "10/05/2023, 15:22:25",\n      "id": 8,\n      "short_description": "short_description",\n      "title": "other post"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 14:48:26",\n      "id": 6,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:29:26",\n      "id": 14,\n      "short_description": "short_description",\n      "title": "post 8"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:38",\n      "id": 13,\n      "short_description": "short_description",\n      "title": "post 7"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:06",\n      "id": 10,\n      "short_description": "short_description",\n      "title": "post 4"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:18",\n      "id": 7,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:30",\n      "id": 9,\n      "short_description": "short_description",\n      "title": "post 3"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:29",\n      "id": 12,\n      "short_description": "short_description",\n      "title": "post 6"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:12",\n      "id": 11,\n      "short_description": "short_description",\n      "title": "post 5"\n    }\n  ],\n  "message": "Success"\n}\n'
+[October 12, 2023 - 15:23:28] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:23:28] "GET /sort?sort_by=d*like HTTP/1.1" 200 -
+[October 12, 2023 - 15:23:48] | INFO in app >>> path: /sort | method: GET | status: 200 OK | size: 1671 >>> b'{\n  "code": "SUCCESS",\n  "data": [\n    {\n      "body": "lorem ipsum more....",\n      "created_at": "10/05/2023, 15:22:25",\n      "id": 8,\n      "short_description": "short_description",\n      "title": "other post"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 14:48:26",\n      "id": 6,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:29:26",\n      "id": 14,\n      "short_description": "short_description",\n      "title": "post 8"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:38",\n      "id": 13,\n      "short_description": "short_description",\n      "title": "post 7"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:06",\n      "id": 10,\n      "short_description": "short_description",\n      "title": "post 4"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:18",\n      "id": 7,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:30",\n      "id": 9,\n      "short_description": "short_description",\n      "title": "post 3"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:29",\n      "id": 12,\n      "short_description": "short_description",\n      "title": "post 6"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:12",\n      "id": 11,\n      "short_description": "short_description",\n      "title": "post 5"\n    }\n  ],\n  "message": "Success"\n}\n'
+[October 12, 2023 - 15:23:48] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:23:48] "GET /sort?sort_by=d*like%d*comment HTTP/1.1" 200 -
+[October 12, 2023 - 15:24:09] | INFO in app >>> path: /sort | method: GET | status: 200 OK | size: 1671 >>> b'{\n  "code": "SUCCESS",\n  "data": [\n    {\n      "body": "lorem ipsum more....",\n      "created_at": "10/05/2023, 15:22:25",\n      "id": 8,\n      "short_description": "short_description",\n      "title": "other post"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 14:48:26",\n      "id": 6,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:29:26",\n      "id": 14,\n      "short_description": "short_description",\n      "title": "post 8"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:38",\n      "id": 13,\n      "short_description": "short_description",\n      "title": "post 7"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:06",\n      "id": 10,\n      "short_description": "short_description",\n      "title": "post 4"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:18",\n      "id": 7,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:30",\n      "id": 9,\n      "short_description": "short_description",\n      "title": "post 3"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:29",\n      "id": 12,\n      "short_description": "short_description",\n      "title": "post 6"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:12",\n      "id": 11,\n      "short_description": "short_description",\n      "title": "post 5"\n    }\n  ],\n  "message": "Success"\n}\n'
+[October 12, 2023 - 15:24:09] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:24:09] "GET /sort?sort_by=d*like%a*created_at HTTP/1.1" 200 -
+[October 12, 2023 - 15:24:32] | INFO in app >>> path: /sort | method: GET | status: 200 OK | size: 1671 >>> b'{\n  "code": "SUCCESS",\n  "data": [\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:06",\n      "id": 10,\n      "short_description": "short_description",\n      "title": "post 4"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 14:48:26",\n      "id": 6,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:29:26",\n      "id": 14,\n      "short_description": "short_description",\n      "title": "post 8"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:38",\n      "id": 13,\n      "short_description": "short_description",\n      "title": "post 7"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:12",\n      "id": 11,\n      "short_description": "short_description",\n      "title": "post 5"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:18",\n      "id": 7,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:30",\n      "id": 9,\n      "short_description": "short_description",\n      "title": "post 3"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:29",\n      "id": 12,\n      "short_description": "short_description",\n      "title": "post 6"\n    },\n    {\n      "body": "lorem ipsum more....",\n      "created_at": "10/05/2023, 15:22:25",\n      "id": 8,\n      "short_description": "short_description",\n      "title": "other post"\n    }\n  ],\n  "message": "Success"\n}\n'
+[October 12, 2023 - 15:24:32] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:24:32] "GET /sort?sort_by=d*comment%a*created_at HTTP/1.1" 200 -
+[October 12, 2023 - 15:25:10] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 15:25:10] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:25:11] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:25:11] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:25:14] | INFO in app >>> path: /sort | method: GET | status: 400 BAD REQUEST | size: 102 >>> b'{\n  "code": "BAD REQUEST",\n  "data": "Can not sort by: d comment",\n  "message": "Posts not found: "\n}\n'
+[October 12, 2023 - 15:25:14] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:25:14] "[31m[1mGET /sort?sort_by=d+comment%a+created_at HTTP/1.1[0m" 400 -
+[October 12, 2023 - 15:25:34] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 15:25:34] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:25:35] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:25:35] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:25:37] | INFO in app >>> path: /sort | method: GET | status: 200 OK | size: 1671 >>> b'{\n  "code": "SUCCESS",\n  "data": [\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:06",\n      "id": 10,\n      "short_description": "short_description",\n      "title": "post 4"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 14:48:26",\n      "id": 6,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:29:26",\n      "id": 14,\n      "short_description": "short_description",\n      "title": "post 8"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:38",\n      "id": 13,\n      "short_description": "short_description",\n      "title": "post 7"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:12",\n      "id": 11,\n      "short_description": "short_description",\n      "title": "post 5"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:18",\n      "id": 7,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:30",\n      "id": 9,\n      "short_description": "short_description",\n      "title": "post 3"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:29",\n      "id": 12,\n      "short_description": "short_description",\n      "title": "post 6"\n    },\n    {\n      "body": "lorem ipsum more....",\n      "created_at": "10/05/2023, 15:22:25",\n      "id": 8,\n      "short_description": "short_description",\n      "title": "other post"\n    }\n  ],\n  "message": "Success"\n}\n'
+[October 12, 2023 - 15:25:37] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:25:37] "GET /sort?sort_by=d+comment%a+created_at HTTP/1.1" 200 -
+[October 12, 2023 - 15:27:10] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 15:27:10] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:27:11] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:27:11] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:27:14] | INFO in app >>> path: /sort | method: GET | status: 200 OK | size: 1671 >>> b'{\n  "code": "SUCCESS",\n  "data": [\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:06",\n      "id": 10,\n      "short_description": "short_description",\n      "title": "post 4"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 14:48:26",\n      "id": 6,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:29:26",\n      "id": 14,\n      "short_description": "short_description",\n      "title": "post 8"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:38",\n      "id": 13,\n      "short_description": "short_description",\n      "title": "post 7"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:12",\n      "id": 11,\n      "short_description": "short_description",\n      "title": "post 5"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:18",\n      "id": 7,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:30",\n      "id": 9,\n      "short_description": "short_description",\n      "title": "post 3"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:29",\n      "id": 12,\n      "short_description": "short_description",\n      "title": "post 6"\n    },\n    {\n      "body": "lorem ipsum more....",\n      "created_at": "10/05/2023, 15:22:25",\n      "id": 8,\n      "short_description": "short_description",\n      "title": "other post"\n    }\n  ],\n  "message": "Success"\n}\n'
+[October 12, 2023 - 15:27:14] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:27:14] "GET /sort?sort_by=d+comment%a+created_at HTTP/1.1" 200 -
+[October 12, 2023 - 15:27:32] | INFO in app >>> path: /sort | method: GET | status: 200 OK | size: 1671 >>> b'{\n  "code": "SUCCESS",\n  "data": [\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:06",\n      "id": 10,\n      "short_description": "short_description",\n      "title": "post 4"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 14:48:26",\n      "id": 6,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:29:26",\n      "id": 14,\n      "short_description": "short_description",\n      "title": "post 8"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:38",\n      "id": 13,\n      "short_description": "short_description",\n      "title": "post 7"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:12",\n      "id": 11,\n      "short_description": "short_description",\n      "title": "post 5"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:18",\n      "id": 7,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:30",\n      "id": 9,\n      "short_description": "short_description",\n      "title": "post 3"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:29",\n      "id": 12,\n      "short_description": "short_description",\n      "title": "post 6"\n    },\n    {\n      "body": "lorem ipsum more....",\n      "created_at": "10/05/2023, 15:22:25",\n      "id": 8,\n      "short_description": "short_description",\n      "title": "other post"\n    }\n  ],\n  "message": "Success"\n}\n'
+[October 12, 2023 - 15:27:32] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:27:32] "GET /sort?sort_by=d+comment%a+created_at HTTP/1.1" 200 -
+[October 12, 2023 - 15:28:03] | INFO in app >>> path: /sort | method: GET | status: 200 OK | size: 1671 >>> b'{\n  "code": "SUCCESS",\n  "data": [\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:06",\n      "id": 10,\n      "short_description": "short_description",\n      "title": "post 4"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 14:48:26",\n      "id": 6,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:29:26",\n      "id": 14,\n      "short_description": "short_description",\n      "title": "post 8"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:38",\n      "id": 13,\n      "short_description": "short_description",\n      "title": "post 7"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:12",\n      "id": 11,\n      "short_description": "short_description",\n      "title": "post 5"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:18",\n      "id": 7,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:30",\n      "id": 9,\n      "short_description": "short_description",\n      "title": "post 3"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:29",\n      "id": 12,\n      "short_description": "short_description",\n      "title": "post 6"\n    },\n    {\n      "body": "lorem ipsum more....",\n      "created_at": "10/05/2023, 15:22:25",\n      "id": 8,\n      "short_description": "short_description",\n      "title": "other post"\n    }\n  ],\n  "message": "Success"\n}\n'
+[October 12, 2023 - 15:28:03] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:28:03] "GET /sort?sort_by=d+comment%a+created_at HTTP/1.1" 200 -
+[October 12, 2023 - 15:28:35] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 15:28:35] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:28:36] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:28:36] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:28:55] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 15:28:55] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:28:56] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:28:56] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:28:57] | INFO in app >>> path: /sort | method: GET | status: 200 OK | size: 1671 >>> b'{\n  "code": "SUCCESS",\n  "data": [\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:06",\n      "id": 10,\n      "short_description": "short_description",\n      "title": "post 4"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 14:48:26",\n      "id": 6,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:29:26",\n      "id": 14,\n      "short_description": "short_description",\n      "title": "post 8"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:38",\n      "id": 13,\n      "short_description": "short_description",\n      "title": "post 7"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:12",\n      "id": 11,\n      "short_description": "short_description",\n      "title": "post 5"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:18",\n      "id": 7,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:30",\n      "id": 9,\n      "short_description": "short_description",\n      "title": "post 3"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:29",\n      "id": 12,\n      "short_description": "short_description",\n      "title": "post 6"\n    },\n    {\n      "body": "lorem ipsum more....",\n      "created_at": "10/05/2023, 15:22:25",\n      "id": 8,\n      "short_description": "short_description",\n      "title": "other post"\n    }\n  ],\n  "message": "Success"\n}\n'
+[October 12, 2023 - 15:28:57] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:28:57] "GET /sort?sort_by=d+comment%a+created_at HTTP/1.1" 200 -
+[October 12, 2023 - 15:29:16] | INFO in _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+[October 12, 2023 - 15:29:16] | INFO in _internal >>> [33mPress CTRL+C to quit[0m
+[October 12, 2023 - 15:31:33] | INFO in _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+[October 12, 2023 - 15:31:33] | INFO in _internal >>> [33mPress CTRL+C to quit[0m
+[October 12, 2023 - 15:31:34] | INFO in app >>> path: /sort | method: GET | status: 200 OK | size: 1205 >>> b'{"code":"SUCCESS","data":[{"body":"lorem ipsum....","created_at":"10/05/2023, 15:24:06","id":10,"short_description":"short_description","title":"post 4"},{"body":"lorem ipsum....","created_at":"10/05/2023, 14:48:26","id":6,"short_description":"short_description","title":"post 1"},{"body":"lorem ipsum....","created_at":"10/05/2023, 15:29:26","id":14,"short_description":"short_description","title":"post 8"},{"body":"lorem ipsum....","created_at":"10/05/2023, 15:28:38","id":13,"short_description":"short_description","title":"post 7"},{"body":"lorem ipsum....","created_at":"10/05/2023, 15:24:12","id":11,"short_description":"short_description","title":"post 5"},{"body":"lorem ipsum....","created_at":"10/05/2023, 15:22:18","id":7,"short_description":"short_description","title":"post 1"},{"body":"lorem ipsum....","created_at":"10/05/2023, 15:22:30","id":9,"short_description":"short_description","title":"post 3"},{"body":"lorem ipsum....","created_at":"10/05/2023, 15:28:29","id":12,"short_description":"short_description","title":"post 6"},{"body":"lorem ipsum more....","created_at":"10/05/2023, 15:22:25","id":8,"short_description":"short_description","title":"other post"}],"message":"Success"}\n'
+[October 12, 2023 - 15:31:34] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:31:34] "GET /sort?sort_by=d+comment%a+created_at HTTP/1.1" 200 -
+[October 12, 2023 - 15:31:53] | INFO in app >>> path: /sort | method: GET | status: 200 OK | size: 1205 >>> b'{"code":"SUCCESS","data":[{"body":"lorem ipsum....","created_at":"10/05/2023, 15:24:06","id":10,"short_description":"short_description","title":"post 4"},{"body":"lorem ipsum....","created_at":"10/05/2023, 14:48:26","id":6,"short_description":"short_description","title":"post 1"},{"body":"lorem ipsum....","created_at":"10/05/2023, 15:29:26","id":14,"short_description":"short_description","title":"post 8"},{"body":"lorem ipsum....","created_at":"10/05/2023, 15:28:38","id":13,"short_description":"short_description","title":"post 7"},{"body":"lorem ipsum....","created_at":"10/05/2023, 15:24:12","id":11,"short_description":"short_description","title":"post 5"},{"body":"lorem ipsum....","created_at":"10/05/2023, 15:22:18","id":7,"short_description":"short_description","title":"post 1"},{"body":"lorem ipsum....","created_at":"10/05/2023, 15:22:30","id":9,"short_description":"short_description","title":"post 3"},{"body":"lorem ipsum....","created_at":"10/05/2023, 15:28:29","id":12,"short_description":"short_description","title":"post 6"},{"body":"lorem ipsum more....","created_at":"10/05/2023, 15:22:25","id":8,"short_description":"short_description","title":"other post"}],"message":"Success"}\n'
+[October 12, 2023 - 15:31:53] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:31:53] "GET /sort?sort_by=d+comment%a+created_at HTTP/1.1" 200 -
+[October 12, 2023 - 15:32:32] | INFO in _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+[October 12, 2023 - 15:32:32] | INFO in _internal >>> [33mPress CTRL+C to quit[0m
+[October 12, 2023 - 15:32:32] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:32:32] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:32:32] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:32:37] | INFO in app >>> path: /sort | method: GET | status: 200 OK | size: 1671 >>> b'{\n  "code": "SUCCESS",\n  "data": [\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:06",\n      "id": 10,\n      "short_description": "short_description",\n      "title": "post 4"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 14:48:26",\n      "id": 6,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:29:26",\n      "id": 14,\n      "short_description": "short_description",\n      "title": "post 8"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:38",\n      "id": 13,\n      "short_description": "short_description",\n      "title": "post 7"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:12",\n      "id": 11,\n      "short_description": "short_description",\n      "title": "post 5"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:18",\n      "id": 7,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:30",\n      "id": 9,\n      "short_description": "short_description",\n      "title": "post 3"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:29",\n      "id": 12,\n      "short_description": "short_description",\n      "title": "post 6"\n    },\n    {\n      "body": "lorem ipsum more....",\n      "created_at": "10/05/2023, 15:22:25",\n      "id": 8,\n      "short_description": "short_description",\n      "title": "other post"\n    }\n  ],\n  "message": "Success"\n}\n'
+[October 12, 2023 - 15:32:37] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:32:37] "GET /sort?sort_by=d+comment%a+created_at HTTP/1.1" 200 -
+[October 12, 2023 - 15:32:59] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 15:32:59] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:33:00] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:33:00] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:33:10] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 15:33:10] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:33:10] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:33:10] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:33:14] | INFO in app >>> path: /sort | method: GET | status: 200 OK | size: 1671 >>> b'{\n  "code": "SUCCESS",\n  "data": [\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:06",\n      "id": 10,\n      "short_description": "short_description",\n      "title": "post 4"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 14:48:26",\n      "id": 6,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:29:26",\n      "id": 14,\n      "short_description": "short_description",\n      "title": "post 8"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:38",\n      "id": 13,\n      "short_description": "short_description",\n      "title": "post 7"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:12",\n      "id": 11,\n      "short_description": "short_description",\n      "title": "post 5"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:18",\n      "id": 7,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:30",\n      "id": 9,\n      "short_description": "short_description",\n      "title": "post 3"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:29",\n      "id": 12,\n      "short_description": "short_description",\n      "title": "post 6"\n    },\n    {\n      "body": "lorem ipsum more....",\n      "created_at": "10/05/2023, 15:22:25",\n      "id": 8,\n      "short_description": "short_description",\n      "title": "other post"\n    }\n  ],\n  "message": "Success"\n}\n'
+[October 12, 2023 - 15:33:14] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:33:14] "GET /sort?sort_by=d+comment%a+created_at HTTP/1.1" 200 -
+[October 12, 2023 - 15:33:41] | INFO in _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+[October 12, 2023 - 15:33:41] | INFO in _internal >>> [33mPress CTRL+C to quit[0m
+[October 12, 2023 - 15:34:41] | INFO in _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+[October 12, 2023 - 15:34:41] | INFO in _internal >>> [33mPress CTRL+C to quit[0m
+[October 12, 2023 - 15:34:41] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:34:42] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:34:42] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:34:45] | INFO in app >>> path: /sort | method: GET | status: 200 OK | size: 1671 >>> b'{\n  "code": "SUCCESS",\n  "data": [\n    {\n      "body": "lorem ipsum more....",\n      "created_at": "10/05/2023, 15:22:25",\n      "id": 8,\n      "short_description": "short_description",\n      "title": "other post"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:18",\n      "id": 7,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:29",\n      "id": 12,\n      "short_description": "short_description",\n      "title": "post 6"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:06",\n      "id": 10,\n      "short_description": "short_description",\n      "title": "post 4"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 14:48:26",\n      "id": 6,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:30",\n      "id": 9,\n      "short_description": "short_description",\n      "title": "post 3"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:12",\n      "id": 11,\n      "short_description": "short_description",\n      "title": "post 5"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:38",\n      "id": 13,\n      "short_description": "short_description",\n      "title": "post 7"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:29:26",\n      "id": 14,\n      "short_description": "short_description",\n      "title": "post 8"\n    }\n  ],\n  "message": "Success"\n}\n'
+[October 12, 2023 - 15:34:45] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 15:34:45] "GET /sort?sort_by=d+comment%a+created_at HTTP/1.1" 200 -
+[October 12, 2023 - 15:35:00] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 15:35:00] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:35:01] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:35:01] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:43:00] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\controllers\\post_controller.py', reloading
+[October 12, 2023 - 15:43:00] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:45:12] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:45:12] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:45:12] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:45:39] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 15:45:39] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:45:40] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:45:40] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:52:12] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 15:52:12] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:52:13] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:52:13] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:52:23] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 15:52:24] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:52:25] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:52:25] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:52:36] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 15:52:36] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:52:38] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:52:38] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:57:18] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 15:57:18] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:57:19] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:57:19] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 15:58:09] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 15:58:09] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 15:58:10] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 15:58:10] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 16:03:54] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 16:03:54] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 16:03:55] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 16:03:55] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 16:04:59] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 16:04:59] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 16:05:00] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 16:05:00] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 16:07:35] | INFO in app >>> path: /sort | method: GET | status: 200 OK | size: 1671 >>> b'{\n  "code": "SUCCESS",\n  "data": [\n    {\n      "body": "lorem ipsum more....",\n      "created_at": "10/05/2023, 15:22:25",\n      "id": 8,\n      "short_description": "short_description",\n      "title": "other post"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:18",\n      "id": 7,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:29",\n      "id": 12,\n      "short_description": "short_description",\n      "title": "post 6"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:06",\n      "id": 10,\n      "short_description": "short_description",\n      "title": "post 4"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 14:48:26",\n      "id": 6,\n      "short_description": "short_description",\n      "title": "post 1"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:22:30",\n      "id": 9,\n      "short_description": "short_description",\n      "title": "post 3"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:24:12",\n      "id": 11,\n      "short_description": "short_description",\n      "title": "post 5"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:28:38",\n      "id": 13,\n      "short_description": "short_description",\n      "title": "post 7"\n    },\n    {\n      "body": "lorem ipsum....",\n      "created_at": "10/05/2023, 15:29:26",\n      "id": 14,\n      "short_description": "short_description",\n      "title": "post 8"\n    }\n  ],\n  "message": "Success"\n}\n'
+[October 12, 2023 - 16:07:35] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 16:07:35] "GET /sort?sort_by=d+comment%a+created_at HTTP/1.1" 200 -
+[October 12, 2023 - 16:11:16] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 16:11:17] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 16:11:18] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 16:11:18] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 16:12:38] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\comment_service.py', reloading
+[October 12, 2023 - 16:12:39] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 16:12:39] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 16:12:39] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 16:14:37] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\comment_repo.py', reloading
+[October 12, 2023 - 16:14:37] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 16:14:38] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 16:14:38] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 16:14:49] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\comment_repo.py', reloading
+[October 12, 2023 - 16:14:49] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 16:14:50] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 16:14:50] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 16:15:29] | INFO in app >>> path: /search-all | method: GET | status: 200 OK | size: 1072 >>> b'{\n  "code": "SUCCESS",\n  "data": {\n    "comments": [],\n    "posts": [\n      {\n        "body": "lorem ipsum more....",\n        "created_at": "10/05/2023, 15:22:25",\n        "id": 8,\n        "short_description": "short_description",\n        "title": "other post"\n      },\n      {\n        "body": "lorem ipsum....",\n        "created_at": "10/05/2023, 15:28:29",\n        "id": 12,\n        "short_description": "short_description",\n        "title": "post 6"\n      },\n      {\n        "body": "lorem ipsum....",\n        "created_at": "10/05/2023, 15:22:18",\n        "id": 7,\n        "short_description": "short_description",\n        "title": "post 1"\n      },\n      {\n        "body": "lorem ipsum....",\n        "created_at": "10/05/2023, 15:24:06",\n        "id": 10,\n        "short_description": "short_description",\n        "title": "post 4"\n      },\n      {\n        "body": "lorem ipsum....",\n        "created_at": "10/05/2023, 15:29:26",\n        "id": 14,\n        "short_description": "short_description",\n        "title": "post 8"\n      }\n    ]\n  },\n  "message": "Success"\n}\n'
+[October 12, 2023 - 16:15:29] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 16:15:29] "GET /search-all?q=post HTTP/1.1" 200 -
+[October 12, 2023 - 16:16:09] | INFO in app >>> path: /search-all | method: GET | status: 200 OK | size: 101 >>> b'{\n  "code": "SUCCESS",\n  "data": {\n    "comments": [],\n    "posts": []\n  },\n  "message": "Success"\n}\n'
+[October 12, 2023 - 16:16:09] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 16:16:09] "GET /search-all?q=post+comment HTTP/1.1" 200 -
+[October 12, 2023 - 16:16:14] | INFO in app >>> path: /search-all | method: GET | status: 200 OK | size: 1178 >>> b'{\n  "code": "SUCCESS",\n  "data": {\n    "comments": [\n      {\n        "author_id": 50,\n        "content": "Some commentswwrwr",\n        "created_at": "10/05/2023, 16:10:07",\n        "id": 41,\n        "post_id": 7,\n        "updated_at": "10/05/2023, 16:10:07"\n      },\n      {\n        "author_id": 52,\n        "content": "Some commentswwrwr",\n        "created_at": "10/05/2023, 16:00:47",\n        "id": 40,\n        "post_id": 7,\n        "updated_at": "10/05/2023, 16:00:47"\n      },\n      {\n        "author_id": 52,\n        "content": "Some commentswwrwr",\n        "created_at": "10/05/2023, 16:00:43",\n        "id": 39,\n        "post_id": 10,\n        "updated_at": "10/05/2023, 16:00:43"\n      },\n      {\n        "author_id": 52,\n        "content": "Some commentswwrwr",\n        "created_at": "10/05/2023, 16:00:38",\n        "id": 38,\n        "post_id": 12,\n        "updated_at": "10/05/2023, 16:00:38"\n      },\n      {\n        "author_id": 52,\n        "content": "Some commentswwrwr",\n        "created_at": "10/05/2023, 16:00:37",\n        "id": 37,\n        "post_id": 12,\n        "updated_at": "10/05/2023, 16:00:37"\n      }\n    ],\n    "posts": []\n  },\n  "message": "Success"\n}\n'
+[October 12, 2023 - 16:16:14] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 16:16:14] "GET /search-all?q=comment HTTP/1.1" 200 -
+[October 12, 2023 - 16:22:25] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\controllers\\post_controller.py', reloading
+[October 12, 2023 - 16:22:25] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 16:22:26] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 16:22:26] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 16:23:04] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 16:23:04] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 16:23:05] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 16:23:05] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 16:23:47] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\app.py', reloading
+[October 12, 2023 - 16:23:47] | INFO in _internal >>>  * Restarting with stat

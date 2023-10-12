@@ -47,10 +47,6 @@ def get_all_by_post_id(post_id):
 
 def count_likes(post_id):
     try:
-        """
-        SELECT COUNT(*) FROM post_likes as pl
-        WHERE pl.post_id = <post_id>
-        """
         likes = Like.query.filter_by(post_id=post_id).count()
         return Result.success(likes)
     except Exception as e:

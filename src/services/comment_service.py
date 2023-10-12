@@ -35,3 +35,7 @@ def get_all_by_post_id(post_id):
         return comment_repo.get_all_by_post_id(post_id)
     except Exception as e:
         return Result.failed("Error in comment services: " + str(e))
+
+
+def search_comment(keyword):
+    return comment_repo.search_comment("%{}%".format(keyword))

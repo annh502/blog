@@ -1,0 +1,39 @@
+[October 12, 2023 - 16:34:49] | INFO in _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+[October 12, 2023 - 16:34:49] | INFO in _internal >>> [33mPress CTRL+C to quit[0m
+[October 12, 2023 - 16:34:49] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 16:34:50] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 16:34:50] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 16:59:07] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 16:59:07] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 16:59:08] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 16:59:08] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 16:59:24] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 16:59:24] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 16:59:25] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 16:59:25] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 17:03:05] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\repository\\post_repo.py', reloading
+[October 12, 2023 - 17:03:05] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 17:03:06] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 17:03:06] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 17:03:07] | INFO in post_repo >>> Search posts
+[October 12, 2023 - 17:03:07] | INFO in app >>> path: /search-all | method: GET | status: 200 OK | size: 1178 >>> b'{\n  "code": "SUCCESS",\n  "data": {\n    "comments": [\n      {\n        "author_id": 50,\n        "content": "Some commentswwrwr",\n        "created_at": "10/05/2023, 16:10:07",\n        "id": 41,\n        "post_id": 7,\n        "updated_at": "10/05/2023, 16:10:07"\n      },\n      {\n        "author_id": 52,\n        "content": "Some commentswwrwr",\n        "created_at": "10/05/2023, 16:00:47",\n        "id": 40,\n        "post_id": 7,\n        "updated_at": "10/05/2023, 16:00:47"\n      },\n      {\n        "author_id": 52,\n        "content": "Some commentswwrwr",\n        "created_at": "10/05/2023, 16:00:43",\n        "id": 39,\n        "post_id": 10,\n        "updated_at": "10/05/2023, 16:00:43"\n      },\n      {\n        "author_id": 52,\n        "content": "Some commentswwrwr",\n        "created_at": "10/05/2023, 16:00:38",\n        "id": 38,\n        "post_id": 12,\n        "updated_at": "10/05/2023, 16:00:38"\n      },\n      {\n        "author_id": 52,\n        "content": "Some commentswwrwr",\n        "created_at": "10/05/2023, 16:00:37",\n        "id": 37,\n        "post_id": 12,\n        "updated_at": "10/05/2023, 16:00:37"\n      }\n    ],\n    "posts": []\n  },\n  "message": "Success"\n}\n'
+[October 12, 2023 - 17:03:07] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 17:03:07] "GET /search-all?q=comment HTTP/1.1" 200 -
+[October 12, 2023 - 17:03:29] | INFO in post_repo >>> Search posts
+[October 12, 2023 - 17:03:29] | INFO in app >>> path: /search-all | method: GET | status: 200 OK | size: 1072 >>> b'{\n  "code": "SUCCESS",\n  "data": {\n    "comments": [],\n    "posts": [\n      {\n        "body": "lorem ipsum more....",\n        "created_at": "10/05/2023, 15:22:25",\n        "id": 8,\n        "short_description": "short_description",\n        "title": "other post"\n      },\n      {\n        "body": "lorem ipsum....",\n        "created_at": "10/05/2023, 15:28:29",\n        "id": 12,\n        "short_description": "short_description",\n        "title": "post 6"\n      },\n      {\n        "body": "lorem ipsum....",\n        "created_at": "10/05/2023, 15:22:18",\n        "id": 7,\n        "short_description": "short_description",\n        "title": "post 1"\n      },\n      {\n        "body": "lorem ipsum....",\n        "created_at": "10/05/2023, 15:24:06",\n        "id": 10,\n        "short_description": "short_description",\n        "title": "post 4"\n      },\n      {\n        "body": "lorem ipsum....",\n        "created_at": "10/05/2023, 15:29:26",\n        "id": 14,\n        "short_description": "short_description",\n        "title": "post 8"\n      }\n    ]\n  },\n  "message": "Success"\n}\n'
+[October 12, 2023 - 17:03:29] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 17:03:29] "GET /search-all?q=post HTTP/1.1" 200 -
+[October 12, 2023 - 17:15:16] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\src\\services\\post_service.py', reloading
+[October 12, 2023 - 17:15:16] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 17:15:17] | WARNING in _internal >>>  * Debugger is active!
+[October 12, 2023 - 17:15:17] | INFO in _internal >>>  * Debugger PIN: 114-930-794
+[October 12, 2023 - 17:15:23] | ERROR in post_service >>> Exception in sort_posts: division by zero
+Traceback (most recent call last):
+  File "C:\Users\RB019\PycharmProjects\flaskProject\src\services\post_service.py", line 106, in sort_posts
+    a = 1 / 0
+        ~~^~~
+ZeroDivisionError: division by zero
+[October 12, 2023 - 17:15:23] | INFO in app >>> path: /sort | method: GET | status: 400 BAD REQUEST | size: 103 >>> b'{\n  "code": "BAD REQUEST",\n  "data": "Cannot savedivision by zero",\n  "message": "Posts not found: "\n}\n'
+[October 12, 2023 - 17:15:23] | INFO in _internal >>> 127.0.0.1 - - [12/Oct/2023 17:15:23] "[31m[1mGET /sort?sort_by=d+comment%a+created_at HTTP/1.1[0m" 400 -
+[October 12, 2023 - 17:25:13] | INFO in _internal >>>  * Detected change in 'C:\\Users\\RB019\\PycharmProjects\\flaskProject\\app.py', reloading
+[October 12, 2023 - 17:25:13] | INFO in _internal >>>  * Restarting with stat
+[October 12, 2023 - 17:25:42] | INFO in _internal >>>  * Restarting with stat

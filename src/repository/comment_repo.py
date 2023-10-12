@@ -52,4 +52,12 @@ def get_all():
         return Result.failed("Cannot save" + str(e))
 
 
-
+def search_comment(keyword):
+    try:
+        comments = Comment.query.filter(Comment.content.like(keyword))\
+            .order_by(Comment.created_at.desc()) \
+            .limit(5)
+        return Result.success(comments)
+    except Exception as e:
+        traceback.print_exc()
+        return Result.failed("Error: post_repo " + str(e))
